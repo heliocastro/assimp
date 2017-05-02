@@ -32,8 +32,8 @@ build_script:
 - if "%platform%" equ "x86" (msbuild /m /p:Configuration=Release /p:Platform="Win32" Assimp.sln)
 
 after_build:
-  - 7z a assimp.7z c:\projects\assimp\bin\release\* c:\projects\assimp\lib\release\*
+  - 7z a assimp-windows-static-heliocastro.7z c:\projects\assimp\bin\release\* c:\projects\assimp\lib\release\*
 
 artifacts:
-  - path: assimp.7z
-    name: assimp_lib
+  - path: assimp-windows-static-heliocastro.7z
+    name: assimp_windows_static_lib
